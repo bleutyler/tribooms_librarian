@@ -1,0 +1,6 @@
+
+1. install applications for the develeopment environment
+    a  GIT
+    b  VSCode
+    c  Python
+
