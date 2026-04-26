@@ -24,14 +24,15 @@ def find_duplicates(source_folder=os.getcwd()):
     return duplicates
 
 def main():
-    folder = os.getcwd()
+    folder = r"C:\Users\freed\OneDrive\Desktop\Coding Programs\VSCode Projects\tribooms_librarian\Duplicate File Sample Folder"
     duplicates = find_duplicates(folder)
     if duplicates:
         print("Duplicate files found:")
         for hash_val, paths in duplicates.items():
-            print(f"Hash: {hash_val}")
+            print(f"Hash: {hash_val}. Their are {len(paths)} instances of ")
             for path in paths:
-                print(f"  {path}")
+               print(f"  {path}")
+               pass
             print()
     else:
         print("No duplicate files found.")
